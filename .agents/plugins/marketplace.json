@@ -1,0 +1,20 @@
+{
+  "name": "ai-worklog",
+  "interface": {
+    "displayName": "AI Worklog"
+  },
+  "plugins": [
+    {
+      "name": "ai-worklog",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

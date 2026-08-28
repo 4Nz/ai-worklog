@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible AI Worklog problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options:
+        - Codex
+        - Claude Code
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: AI Worklog, Agent, Python, macOS, and Obsidian versions
+    validations:
+      required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation method
+      options:
+        - Native marketplace
+        - Local plugin directory
+        - Direct Skill copy
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Sanitized reproduction
+      description: Remove credentials, real Session IDs, Vault paths, project paths, and private repository URLs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed secrets, credentials, real Session IDs, and personal paths.
+          required: true

@@ -1,0 +1,6 @@
+docs/superpowers/ export-ignore
+.superpowers/ export-ignore
+.worktrees/ export-ignore
+**/__pycache__/ export-ignore
+*.py[cod] export-ignore
+dist/ export-ignore

@@ -1,0 +1,37 @@
+{
+  "name": "ai-worklog",
+  "version": "0.1.0",
+  "description": "Track requirements across projects with shared Codex and Claude Code session histories in Obsidian.",
+  "author": {
+    "name": "4Nz",
+    "url": "https://github.com/4Nz"
+  },
+  "homepage": "https://github.com/4Nz/ai-worklog",
+  "repository": "https://github.com/4Nz/ai-worklog.git",
+  "license": "Apache-2.0",
+  "keywords": [
+    "codex",
+    "claude-code",
+    "obsidian",
+    "requirements",
+    "worklog"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Worklog for Obsidian",
+    "shortDescription": "Track requirements across projects and Agent sessions",
+    "longDescription": "Bind Codex and Claude Code sessions from multiple projects to shared, searchable work-item histories in Obsidian.",
+    "developerName": "4Nz",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/4Nz/ai-worklog",
+    "defaultPrompt": [
+      "Use AI Worklog to bind this session to a requirement.",
+      "Use AI Worklog to recall a requirement's project sessions."
+    ],
+    "brandColor": "#2F6F62"
+  }
+}

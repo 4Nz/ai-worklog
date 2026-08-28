@@ -1,0 +1,21 @@
+{
+  "name": "ai-worklog",
+  "displayName": "AI Worklog for Obsidian",
+  "version": "0.1.0",
+  "description": "Track requirements across projects with shared Codex and Claude Code session histories in Obsidian.",
+  "author": {
+    "name": "4Nz",
+    "url": "https://github.com/4Nz"
+  },
+  "homepage": "https://github.com/4Nz/ai-worklog",
+  "repository": "https://github.com/4Nz/ai-worklog.git",
+  "license": "Apache-2.0",
+  "keywords": [
+    "codex",
+    "claude-code",
+    "obsidian",
+    "requirements",
+    "worklog"
+  ],
+  "skills": "./skills/"
+}

@@ -1,0 +1,43 @@
+name: Feature request
+description: Propose a focused improvement to AI Worklog
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the requirement, project, or session workflow that is difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe observable behavior without prescribing an implementation.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Agent scope
+      options:
+        - Shared core
+        - Codex
+        - Claude Code
+        - Obsidian storage
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility considerations
+      description: Note any command, configuration, or dossier schema impact.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This request contains no credentials, real Session IDs, or personal paths.
+          required: true
