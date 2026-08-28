@@ -87,6 +87,10 @@ Claude Code：
 /ai-worklog:ai-worklog query 幂等
 ```
 
+需求档案召回效果示例：
+
+![AI Worklog 需求档案召回效果](assets/ai-worklog-recall.png)
+
 `bind` 会先校验 Agent、Session ID、仓库、项目、Vault 和已有档案，再修改
 会话名称。只有自动改名成功或用户明确确认手工改名后，才会写入档案。
 

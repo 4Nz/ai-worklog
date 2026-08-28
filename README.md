@@ -95,6 +95,10 @@ Claude Code:
 /ai-worklog:ai-worklog query idempotency
 ```
 
+Example recall output:
+
+![AI Worklog recall output](assets/ai-worklog-recall.png)
+
 `bind` validates the current Agent, Session ID, repository, project, vault, and
 existing dossier before it renames the task. The dossier is written only after
 the rename succeeds or you explicitly confirm a manual rename.
