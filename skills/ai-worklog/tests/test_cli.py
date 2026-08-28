@@ -587,6 +587,17 @@ class CliTests(unittest.TestCase):
 
     def test_disabled_cli_decline_runs_complete_bind_in_filesystem_mode(self):
         self.runner = DisabledCliRunner()
+        state_patch = mock.patch.object(
+            ai_worklog,
+            "detect_obsidian",
+            return_value=ObsidianState(
+                installed=True,
+                cli_present=True,
+                cli_status="registration_required",
+            ),
+        )
+        state_patch.start()
+        self.addCleanup(state_patch.stop)
         prepare_args = (
             "prepare-bind",
             "--work-item-id",
